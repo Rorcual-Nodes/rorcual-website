@@ -2,8 +2,8 @@ module Views exposing (..)
 
 import Data exposing (..)
 import Dict
-import Html exposing (Html, a, article, button, div, h1, h2, h3, h4, img, input, p, pre, section, small, span, table, tbody, td, text, th, thead, tr)
-import Html.Attributes exposing (alt, class, href, id, src, target, value)
+import Html exposing (Html, a, article, button, div, h1, h2, h3, h4, iframe, img, input, p, pre, section, small, span, table, tbody, td, text, th, thead, tr)
+import Html.Attributes exposing (alt, class, href, id, src, style, target, value)
 import Html.Events exposing (onClick, onInput)
 import Html.Lazy exposing (lazy)
 import List exposing (any)
@@ -209,8 +209,8 @@ dashboardView model =
                         ]
                     , div [ class "w-full" ]
                         [ div [ class "row" ]
-                            [ div [ class "col-12", Html.Attributes.style "max-height" "150px", Html.Attributes.style "overflow-y" "auto" ]
-                                [ table [ class "md-table revenue-table condensed" ]
+                            [ div [ class "col-12", Html.Attributes.style "max-height" "150px", Html.Attributes.style "overflow-y" "auto", style "color-scheme" "dark" ]
+                                [ table [ class "md-table revenue-table condensed", style "color-scheme" "dark" ]
                                     [ thead []
                                         [ th [] [ text "Denom" ]
                                         , th [] [ text "Rate" ]
@@ -231,6 +231,21 @@ dashboardView model =
                         ]
                     ]
                 ]
+
+            -- , div [ class "col-12 col-lg-4 col-fhd-4 flex" ]
+            --     [ section [ class "ValidatorBox box flex dir-c ai-s mt-3" ]
+            --         [  iframe
+            -- [ class "telegram-post"
+            -- , src "https://t.me/KujiNews/481?embed=1&color=607d8b&dark=1"
+            -- , style "width" "100%"
+            -- , style "height" "100%"
+            -- , style "border" "none"
+            -- , style "overflow" "scroll"
+            -- , style "color-scheme" "dark"
+            -- ]
+            -- []
+            --         ]
+            --     ]
             , div [ class "col-12 col-lg-12 col-fhd-4 mt-3" ] (latestProjects model)
             , a
                 [ href "https://forms.gle/vy5TRZUeHoK5ejqq5"

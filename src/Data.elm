@@ -58,6 +58,7 @@ teamIcons =
     , ( "DAO DAO", "daodao.png" )
     , ( "kujiDAO", "kujiDAO.jpg" )
     , ( "BackBone Labs", "backbonelabs.svg" )
+    , ( "MantaFi", "mantafi.png" )
     ]
 
 
@@ -355,6 +356,7 @@ projectLogo =
     , ( "Polytone", "daodao.png" )
     , ( "KujiNews", "kujinews.jpg" )
     , ( "Gravedigger Kujira", "backbonelabs.svg" )
+    , ( "MantaFi", "mantafi.png" )
     ]
 
 
